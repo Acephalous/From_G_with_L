@@ -1,0 +1,59 @@
+focus_tree = {
+	id = austrian_focus
+
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = AUS
+		}
+	}
+	
+	default = no
+
+	continuous_focus_position = { x = 50 y = 1100 }
+
+	focus = {
+		id = AUS_economic_crisis
+		icon = GFX_goal_generic_position_armies
+		x = 7
+		y = 0
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		available_if_capitulated = yes
+
+		bypass = {
+			
+				}
+
+		completion_reward = {
+		country_event = aus.1
+					}
+				}
+	focus = {
+		id = AUS_The_last_days_of_Pompeii
+		icon = GFX_goal_generic_position_armies
+		x = 0
+		y = 1
+		prerequisite = { focus = AUS_economic_crisis }
+		cost = 1
+		relative_position_id = AUS_economic_crisis
+		ai_will_do = {
+			factor = 10
+		}
+		available_if_capitulated = yes
+		available = {
+				always = false
+		}
+		bypass = {
+		has_country_flag = Austria_collapse	
+				}
+
+		completion_reward = {
+					}
+				}
+			}
+}			

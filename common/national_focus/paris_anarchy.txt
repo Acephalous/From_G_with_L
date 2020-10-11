@@ -1,0 +1,69 @@
+focus_tree = {
+	id = paris_anarchy_focus
+
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = PAR
+		}
+	}
+		default = no
+
+	continuous_focus_position = { x = 1200 y = 100 }
+	
+
+	shared_focus = PAR_anarchy
+	}
+
+
+	
+
+
+	shared_focus = {
+		id = PAR_anarchy
+		icon = GFX_goal_generic_position_armies
+		x = 7
+		y = 0
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		available_if_capitulated = yes
+		available = {
+		has_country_flag = paris_commune
+		}
+		bypass = {
+		
+				}
+
+		completion_reward = {
+		country_event = { days = 1 id = anc.1 }
+					}
+				}
+		shared_focus = {
+		id = PAR_as_the_dust_settles
+		icon = GFX_goal_generic_position_armies
+		x = 0
+		y = 1
+		cost = 10
+		prerequisite = { focus = PAR_anarchy }
+		cost = 1
+		relative_position_id = PAR_anarchy
+		ai_will_do = {
+			factor = 10
+		}
+		available_if_capitulated = yes
+		available = {
+		always = no
+		}
+		bypass = {
+		has_country_flag = 	PAR_group_came_on_top		
+				}
+completion_reward = {
+		
+					}
+				}			
+	
+}			

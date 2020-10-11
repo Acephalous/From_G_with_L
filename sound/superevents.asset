@@ -1,0 +1,15 @@
+
+soundeffect = {
+	name = "ppf_unification"
+	sounds = {
+		sound = "ppf_unification"
+	}
+	volume = 1
+}
+soundeffect = {
+	name = "latvian_fascism_be_like"
+	sounds = {
+		sound = "latvian_fascism_be_like"
+	}
+	volume = 1
+}

@@ -1,0 +1,38 @@
+﻿	add_namespace = pft
+	
+	country_event = {	
+	id = pft.1
+	title = pft.1.t
+	desc = pft.1.d
+	picture = GFX_
+
+	is_triggered_only = yes
+
+	option = {
+		name = pft.1.a
+			hidden_effect = {
+				PAR = {
+			set_autonomy = {
+				target = PFT
+				autonomy_state = autonomy_free
+				}
+				}
+			create_country_leader = {
+		name = "Henri Giraud"
+		picture = "gfx/leaders/PFT/Portrait_Henri_Giraud.tga"
+		expire = "1965.1.1"
+		ideology = paternalism
+	}
+	set_politics = {
+			ruling_party = paternalism
+			elections_allowed = no
+			}
+			add_popularity = {
+		ideology = paternalism
+		popularity = 0.64
+		}
+	load_oob = "PFT_White"
+	set_country_flag = PFT_white_military			
+		}
+}
+}

@@ -1,0 +1,13 @@
+
+sound = {
+	name = "ppf_unification"
+	file = "menu/ppf_unification.wav"
+	volume = 1
+	always_load = yes
+}
+sound = {
+	name = "latvian_fascism_be_like"
+	file = "menu/latvian_fascism_be_like.wav"
+	volume = 1
+	always_load = yes
+}

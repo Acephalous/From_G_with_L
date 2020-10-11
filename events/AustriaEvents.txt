@@ -1,0 +1,159 @@
+﻿	add_namespace = aus
+	
+	country_event = {	#The last day of pompeii
+	id = aus.1
+	title = aus.1.t
+	desc = aus.1.d
+	picture = GFX_
+
+	is_triggered_only = yes
+
+	option = {
+		name = aus.1.a
+			hidden_effect = {
+		country_event = { days = 10 id = aus.2 }
+		ANS = {
+		country_event = { days = 1 id = ans.1 }
+		}
+		}
+}
+}
+	country_event = {	#Nobles disagree
+	id = aus.2
+	title = aus.2.t
+	desc = aus.2.d
+	picture = GFX_
+
+	is_triggered_only = yes
+
+	option = {
+		name = aus.2.a
+		hidden_effect = {
+		country_event = { days = 10 id = aus.3 }
+		}
+	}
+	}
+	country_event = {	#ethnic tensions
+	id = aus.3
+	title = aus.3.t
+	desc = aus.3.d
+	picture = GFX_
+
+	is_triggered_only = yes
+	hidden_effect = {
+	}
+	option = {
+		name = aus.3.a
+		hidden_effect = {
+		country_event = { days = 10 id = aus.4 }
+		}
+	}
+	}
+		country_event = {	#revolt
+	id = aus.4
+	title = aus.4.t
+	desc = aus.4.d
+	picture = GFX_
+
+	is_triggered_only = yes
+	hidden_effect = {
+	}
+	option = {
+		name = aus.4.a
+		hidden_effect = {
+		country_event = { days = 10 id = aus.5 }
+		}
+	}
+	}
+		country_event = {	#empire collapse
+	id = aus.5
+	title = aus.5.t
+	desc = aus.5.d
+	picture = GFX_
+
+	is_triggered_only = yes
+	
+	option = {
+		name = aus.5.a
+	leave_faction = yes
+	remove_ideas = HRE_member
+	hidden_effect = {
+	set_country_flag = Austria_collapse
+	set_global_flag = Austria_collapse			
+
+	
+BRA = {
+country_event = { days = 1 id = hre.1 }
+}
+BAV = {
+country_event = { days = 1 id = hre.1 }
+}
+BAD = {
+country_event = { days = 1 id = hre.1 }
+}
+ANS = {
+country_event = { days = 1 id = hre.1 }
+}
+BRE = {
+country_event = { days = 1 id = hre.1 }
+}
+FRN = {
+country_event = { days = 1 id = hre.1 }
+}
+GMU = {
+country_event = { days = 1 id = hre.1 }
+}
+HAM = {
+country_event = { days = 1 id = hre.1 }
+}
+HAN = {
+country_event = { days = 1 id = hre.1 }
+}
+HES = {
+country_event = { days = 1 id = hre.1 }
+}
+KOL = {
+country_event = { days = 1 id = hre.1 }
+}
+LUB = {
+country_event = { days = 1 id = hre.1 }
+}
+MCL = {
+country_event = { days = 1 id = hre.1 }
+}
+MNZ = {
+country_event = { days = 1 id = hre.1 }
+}
+MTR = {
+country_event = { days = 1 id = hre.1 }
+}
+MUN = {
+country_event = { days = 1 id = hre.1 }
+}
+NAS = {
+country_event = { days = 1 id = hre.1 }
+}
+OLD = {
+country_event = { days = 1 id = hre.1 }
+}
+PAD = {
+country_event = { days = 1 id = hre.1 }
+}
+POM = {
+country_event = { days = 1 id = hre.1 }
+}
+TRI = {
+country_event = { days = 1 id = hre.1 }
+}
+ULM = {
+country_event = { days = 1 id = hre.1 }
+}
+WRZ = {
+country_event = { days = 1 id = hre.1 }
+}
+WUR = {
+country_event = { days = 1 id = hre.1 }
+}	
+		}
+	}
+	}
